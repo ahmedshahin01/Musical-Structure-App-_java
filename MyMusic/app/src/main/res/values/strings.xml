@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">MyMusic</string>
+    <string name="List">Lists</string>
+    <string name="songs">AllSongs</string>
+    <string name="Playing">PlayigNow</string>
+</resources>

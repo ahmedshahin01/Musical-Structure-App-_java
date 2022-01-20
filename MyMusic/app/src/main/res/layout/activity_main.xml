@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        style="@style/ParentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/music">
+        <LinearLayout
+            style="@style/TapsLayout"
+            android:id="@+id/playingNow">
+            <ImageView
+                style="@style/ImageStyle"
+                android:src="@drawable/playing" />
+            <TextView
+                style="@style/Textstyle"
+                android:layout_weight="1"
+                android:text="Playing Now" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/playList"
+            style="@style/TapsLayout">
+            <ImageView
+                style="@style/ImageStyle"
+                android:src="@drawable/musiclist"/>
+            <TextView
+                style="@style/Textstyle"
+                android:layout_weight="1"
+                android:text="PlayList" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/songs"
+            style="@style/TapsLayout">
+            <ImageView
+                style="@style/ImageStyle"
+                android:src="@drawable/songs"/>
+            <TextView
+                style="@style/Textstyle"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Songs" />
+        </LinearLayout>
+        <TextView
+            android:layout_marginTop="10dp"
+            style="@style/Textstyle"
+            android:layout_height="123dp"
+            android:text="This activity is shown only when the app is launched, and it presents the category choices for the user. " />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

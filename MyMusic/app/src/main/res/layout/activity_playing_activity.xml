@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlayingActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/music">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/playingBTN"
+                style="@style/BTNTaps"
+                android:background="@drawable/playing"
+                android:backgroundTint="#00000000"
+                />
+            <Button
+                android:id="@+id/playListBTN"
+                style="@style/BTNTaps"
+                android:background="@drawable/musiclist"
+                />
+            <Button
+                android:id="@+id/songsBTN"
+                style="@style/BTNTaps"
+                android:background="@drawable/songs"/>
+        </LinearLayout>
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    </LinearLayout>
+        <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.59000003"
+        android:layout_margin="10dp" />
+    <LinearLayout
+        style="@style/mediaButtonsLayout">
+        <ImageView
+            android:id="@+id/previous"
+            style="@style/BTNTaps"
+            android:src="@drawable/ic_skip_previous_black_24dp" />
+        <ImageView
+            android:id="@+id/playPause"
+            style="@style/BTNTaps"
+            android:src="@drawable/ic_play_arrow_black_24dp" />
+        <ImageView
+            android:id="@+id/next"
+            style="@style/BTNTaps"
+            android:src="@drawable/ic_skip_next_black_24dp" />
+    </LinearLayout>
+    <TextView
+        style="@style/Textstyle"
+        android:text="This activity will show and play the current song.There are buttons for moving to the next and to the previous songs"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

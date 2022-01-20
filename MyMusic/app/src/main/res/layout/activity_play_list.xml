@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlayListActivity">
+    <LinearLayout
+        android:background="@drawable/music"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/playingBTN"
+                style="@style/BTNTaps"
+                android:background="@drawable/playing"
+                />
+            <Button
+                android:id="@+id/playListBTN"
+                style="@style/BTNTaps"
+                android:background="@drawable/musiclist"
+                android:backgroundTint="#00000000"
+                />
+            <Button
+                android:id="@+id/songsBTN"
+                style="@style/BTNTaps"
+                android:background="@drawable/songs"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/playList1"
+            style="@style/TapsLayout">
+            <ImageView
+                style="@style/ImageStyle"
+                android:layout_width="50dp"
+                android:src="@drawable/musiclist" />
+            <TextView
+                style="@style/Textstyle"
+                android:layout_weight="1"
+                android:text="PlayList1" />
+        </LinearLayout>
+        <TextView
+            style="@style/Textstyle"
+            android:text="     This activity shows the songs in a list.
+            Pressing on a song will open the now playing activity and play the song. "/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
